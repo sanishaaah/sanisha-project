@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* style.css */
 * {
     margin: 0;
@@ -132,4 +133,140 @@ footer {
     .cards {
         flex-direction: column;
     }
+=======
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
+
+header {
+    background: #3549a5;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+button {
+    background: #3549a5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #24347d;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.page {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #3549a5;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1;
+    min-width: 180px;
+    background: #eef0ff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #3549a5;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #eef0ff;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+li a {
+    color: #3549a5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3549a5;
+    color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav button {
+        width: 42%;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+>>>>>>> ece12a9b6331801e9b2472f293572d36c5bb7434
 }
