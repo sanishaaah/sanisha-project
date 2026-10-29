@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SmartStudy</h1>
+        <p>Your Study Materials & Schedule Manager</p>
+    </header>
+
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('materials')">Study Materials</button>
+        <button onclick="showPage('schedule')">Schedule</button>
+        <button onclick="showPage('upload')">Upload Material</button>
+    </nav>
+
+    <main>
+        <section id="home" class="page">
+            <h2>Welcome to SmartStudy</h2>
+            <p>Organize your learning resources and academic schedule in one place.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Study Materials</h3>
+                    <p>Upload and access your notes and PDFs.</p>
+                </div>
+                <div class="card">
+                    <h3>Study Schedule</h3>
+                    <p>Manage your classes and study time.</p>
+                </div>
+                <div class="card">
+                    <h3>Easy Access</h3>
+                    <p>Keep your learning resources organized.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="materials" class="page hidden">
+            <h2>Study Materials</h2>
+            <input type="text" id="search" placeholder="Search materials..."
+                   oninput="searchMaterials()">
+            <ul id="materialList"></ul>
+        </section>
+
+        <section id="schedule" class="page hidden">
+            <h2>Study Schedule</h2>
+            <form id="scheduleForm">
+                <input type="text" id="task" placeholder="Subject or task" required>
+                <input type="date" id="date" required>
+                <input type="time" id="time" required>
+                <button type="submit">Add Schedule</button>
+            </form>
+            <ul id="scheduleList"></ul>
+        </section>
+
+        <section id="upload" class="page hidden">
+            <h2>Upload Study Material</h2>
+            <form id="uploadForm">
+                <input type="text" id="subject" placeholder="Subject name" required>
+                <input type="file" id="file" accept=".pdf,.txt,.doc,.docx"
+                       required>
+                <button type="submit">Upload</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SmartStudy | Learn Smart, Study Better</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
